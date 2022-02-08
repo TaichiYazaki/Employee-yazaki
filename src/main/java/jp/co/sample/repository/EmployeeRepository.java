@@ -32,6 +32,7 @@ public class EmployeeRepository {
 	public Employee load(Integer id) {
 		String sql = "SELECT * FROM employees WHERE id=:id";
 		SqlParameterSource param = new MapSqlParameterSource().addValue("id", id);
+		//System.out.println(id);
 		Employee employee = template.queryForObject(sql, param, EMPLOYEE_ROW_MAPPER);
 		return employee;
 	}
