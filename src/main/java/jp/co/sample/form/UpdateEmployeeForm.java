@@ -20,5 +20,12 @@ public class UpdateEmployeeForm {
 	public String toString() {
 		return "UpdateEmployeeForm [id=" + id + ", dependentsCount=" + dependentsCount + "]";
 	}
+	public int getIntDependentsCount() {
+		return Integer.parseInt(dependentsCount);
+	}
+	
+	public int getIntId() {
+		return Integer.parseInt(id);
+	}
 	
 }
